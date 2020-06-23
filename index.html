@@ -9,8 +9,8 @@
 <!-- mobile meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- css style -->
-    <link rel="stylesheet" media="screen and (min-width: 1440px)" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1450px)" href="css/small-resolution.css">
+    <link rel="stylesheet" media="screen and (min-width: 1424px)" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="css/small-resolution.css">
   </head>
 <!-- end page needs -->
 <!-- body start-->
@@ -21,6 +21,8 @@
     </header>
 <!-- nav-bar -->
     <nav>
+      <label for="toggle">&#9776;<label>
+      <input type="checkbox" id="toggle">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -41,38 +43,42 @@
         and experience while working with others to enhance my skills and become a master designer.
       </p>
       <div class="white-button">
-      <a href="#">Download Printable Resume</a>
+        <a href="#">Download Printable Resume</a>
       </div>
     </section>
 <!-- home-skills -->
-  <section id="home-skills">
-    <header id="section-header">
-      <h2 id="skills" class="section-title"><img class="icon "src="img/icons/gear-icon.svg" alt="gear icon" align="">Skills</h2>
-    </header>
-    <div class="skills-icons">
-      <img class="icon" src="img/icons/photoshop-icon.png" alt="Linkedin icon">
-      <img class="icon" src="img/icons/illustrator-icon.png" alt="Github icon">
-      <img class="icon" src="img/icons/premier-icon.png" alt="Behance icon">
-      <img class="icon" src="img/icons/indesign-icon.png" alt="Pinterest icon">
-      <img class="icon" src="img/icons/html-icon.png" alt="Github icon">
-      <img class="icon" src="img/icons/css-icon.png" alt="Github icon">
+  <section id="skills-portfolio">
+    <section id="home-skills">
+      <header id="section-header">
+        <h2 id="skills" class="section-title"><img class="icon "src="img/icons/gear-icon-white.png" alt="gear icon" align="">Skills</h2>
+      </header>
+      <div class="skills-icons">
+        <img class="skills-icon" src="img/icons/photoshop-icon.png" alt="Linkedin icon">
+        <img class="skills-icon" src="img/icons/illustrator-icon.png" alt="Github icon">
+        <img class="skills-icon" src="img/icons/premier-icon.png" alt="Behance icon">
+        <img class="skills-icon" src="img/icons/indesign-icon.png" alt="Pinterest icon">
+        <img class="skills-icon" src="img/icons/html-icon.png" alt="Github icon">
+        <img class="skills-icon" src="img/icons/css-icon.png" alt="Github icon">
+      </div>
+    </section>
+  <!-- portfolio -->
+    <section id="portfolio">
+      <img class="bar" src="img/bar-misfit-logo.png" alt="Bar Misfit Logo">
+      <img class="ice" src="img/ice-cream.png" alt="Ice Cream Logo">
+      <img class="nail" src="img/monumental-nails-logo.jpg" alt="Monumental Nails Logo">
+      <img class="sweet" src="img/sweet-giggles-logo.png" alt="Sweet Giggles Logo">
+      <img class="red" src="img/red-velvet-11.png" alt="Red Velvet Logo">
+      <img class="jam" src="img/space-jam-11.png" alt="Space Jam 11">
+    </section>
+    <div class="white-button portfolio-button">
+      <a href="#">View Portfolio</a>
     </div>
-  </section>
-<!-- portfolio -->
-  <section id="portfolio">
-    <img class="bar" src="img/bar-misfit-logo.png" alt="Bar Misfit Logo">
-    <img class="ice" src="img/ice-cream.png" alt="Ice Cream Logo">
-    <img class="nail" src="img/monumental-nails-logo.jpg" alt="Monumental Nails Logo">
-    <img class="sweet" src="img/sweet-giggles-logo.png" alt="Sweet Giggles Logo">
-    <img class="red" src="img/red-velvet-11.png" alt="Red Velvet Logo">
-    <img class="jam" src="img/space-jam-11.png" alt="Space Jam 11">
-    <img class="yin" src="img/yin.png" alt="Yin">
-  </section>
+</section>
 <!-- main -->
 <!-- home-experience -->
     <main class="container">
       <header id="section-header home-exp">
-        <h2 id="experience" class="section-title"><img class="icon" src="img/icons/brief-case-icon.svg" alt="brief case icon" align="">Experience</h2>
+        <h2 id="experience" class="section-title"><img class="icon" src="img/icons/brief-case-icon-dark-blue.png" alt="brief case icon" align="">Experience</h2>
       </header>
       <section class="card">
         <hgroup class="article-title">
@@ -112,10 +118,13 @@
           Managed Amazon inbound operations and warehouse associates. Delegated tasks, coached associates,
           engineered process paths, and analyzed data to strengthen daily operations.
         </p>
-    </article>
-  </section>
+      </article>
+    </section>
     <section class="card">
-      <h3 class="article-title">Graphic Designer<br> <span>Doughmain Education Foundation<br> 2016</span></h3>
+      <hgroup class="article-title">
+        <h3>Graphic Designer</h3>
+        <h4>Doughmain Financial Education Foundation</h4>
+      </hgroup>
       <article>
         <p class="main-content">
           Developed promotional items, such as brochures and information sheets
@@ -128,10 +137,13 @@
     </section>
 <!-- home-education -->
       <header id="section-header home-edu">
-        <h2 id="education" class="section-title"><img class="icon "src="img/icons/graduation-cap.svg" alt="graduation gap icon" align="middle">Education</h2>
+        <h2 id="education" class="section-title"><img class="icon "src="img/icons/graduation-cap-dark-blue.png" alt="graduation gap icon" align="middle">Education</h2>
       </header>
       <section class="card">
-        <h3 class="article-title">OpenClassrooms<br> <span>Web Developer</span></h3>
+        <hgroup class="article-title">
+          <h3>OpenClassrooms</h3>
+          <h4>Web Developer</h4>
+      </hgroup>
         <article>
           <p class="main-content">
             Current student of OpenClassrooms, translating graphic recommendations
@@ -143,7 +155,10 @@
         </article>
     </section>
     <section class="card">
-      <h3 class="article-title">Cheyney University of Pennslyvania<br> <span>Graphic Design</span></h3>
+      <hgroup class="article-title">
+        <h3>Cheyney University of Pennslyvania</h3>
+        <h4>Graphic Design</h4>
+    </hgroup>
       <article>
         <p class="main-content">
           Graduate of Cheyney University specializing in Graphic Design, as well as,
@@ -160,14 +175,13 @@
       <section id="left-side">
         <h2 id="contact" class="section-title">Contact</h2>
         <ul class="contact-list">
-          <li><img class="contact-icon" src="img/icons/email-icon-2.svg" alt="email icon" align="bottom"> crsanchez10@gmail.com</li>
-          <li><img class="contact-icon" src="img/icons/white-iPhone-icon.svg" alt="iPhone icon" align="bottom"> (609)439-5001</li>
-          <li><img class="contact-icon" src="img/icons/skype.png" alt="skype icon" align="bottom"> live:crsanchez2011_1</li>
-          <li><img class="contact-icon" src="img/icons/location-icon.svg" alt="location icon" align="bottom"> Trenton, NJ</li>
+          <li><img class="contact-icon email-icon" src="img/icons/email-icon-dark-blue.png" alt="email icon" align="middle">crsanchez10@gmail.com</li>
+          <li><img class="contact-icon iPhone-icon" src="img/icons/iPhone-icon-dark-blue.png" alt="iPhone icon" align="middle">(609)439-5001</li>
+          <li><img class="contact-icon location-icon" src="img/icons/location-icon-dark-blue.png" alt="location icon" align="middle">Trenton, NJ</li>
         </ul>
       </section>
       <section id="right-side">
-        <h4>Shoot Me a Message!</h4>
+        <h3>Shoot Me a Message!</h3>
         <form action="index.html" method="post">
           <input class="form-name" type="text" name"name" placeholder="Your name">
           <input class="form-email" type="email" name"email" placeholder="Your email" required="Field Required">
@@ -180,10 +194,10 @@
 <!-- footer -->
     <footer>
       <ul>
-        <li><a href="#"><img class="small-icon" src="img/icons/linkedin.png" alt="Linkedin icon"></a></li>
-        <li><a href="#"><img class="small-icon" src="img/icons/github.png" alt="Github icon"></a></li>
-        <li><a href="#"><img class="small-icon" src="img/icons/behance.png" alt="Behance icon"></a></li>
-        <li><a href="#"><img class="small-icon" src="img/icons/pinterest.png" alt="Pinterest icon"></a></li>
+        <li><a href="http://www.linkedin.com/in/crsanchez10" target="_blank"><img class="small-icon" src="img/icons/linkedin-white.png" alt="Linkedin icon"></a></li>
+        <li><a href="https://github.com/2anchez" target="_blank"><img class="small-icon" src="img/icons/github-white.png" alt="Github icon"></a></li>
+        <li><a href="https://www.behance.net/christisanchez22" target="_blank"><img class="small-icon" src="img/icons/behance-white.png" alt="Behance icon"></a></li>
+        <li><a href="#"><img class="small-icon" src="img/icons/pinterest-white.png" alt="Pinterest icon"></a></li>
       </ul>
     </footer>
   </body>

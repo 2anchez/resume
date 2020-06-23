@@ -17,31 +17,35 @@ h1 span {
 
 h2 {
   text-align: center;
+  font-size: 3em;
+  font-weight: lighter;
 }
 
 h2 span {
   font-size: .5em;
-
-}
-
-h3 span {
-  font-size: .75em;
 }
 
 h4 {
-
+  color: #949494;
 }
 
 /* icons */
 .icon {
-  height: 150px;
-  width: 150px;
-  vertical-align: middle;
+  height: ;
+  width: ;
+  vertical-align: bottom;
+  margin-right: 25px;
+}
+
+.skills-icon {
+  height: auto;
+  width: 50%;
 }
 
 .contact-icon {
-  height: 50px;
-  width: 50px;
+  height: auto;
+  width: px;
+  margin-right: 25px;
 }
 
 .small-icon {
@@ -69,7 +73,6 @@ h4 {
   color: #fff;
   border-style: solid;
   text-align: center;
-  align-items: center;
   width: 16em;
   padding: 2em;
   margin: 0 20em;
@@ -93,13 +96,24 @@ nav li {
 nav a {
   text-decoration: none;
   color: #fff;
-  padding: 0 4em;
+  padding: 1.25em 4em;
   background-color: ;
 }
 
 nav a:hover {
   background-color: #333333;
   padding: 1.25em 4em;
+
+}
+
+label {
+  color: #ffffff;
+  display: ;
+  opacity: 0;
+}
+
+#toggle {
+  display: none;
 }
 
 /* home-about */
@@ -128,20 +142,25 @@ nav a:hover {
   box-shadow: 0 1px 10px;
 }
 
+/* skills-portfolio */
+#skills-portfolio {
+  background-color: #005b7f;
+  padding: 50px;
+}
 /* skills */
 #home-skills {
-  background-color: #005b7f;
+ color: #ffffff;
 }
 
 #home-skills div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 50px;
-  padding: 50px;
+  padding: 0 500px;
 }
 
 .skills-icons img {
-  margin-left: 200px;
+  margin-left: ;
 }
 
 /* portfolio */
@@ -198,60 +217,79 @@ nav a:hover {
 
 /* main content */
 main {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 25px;
+}
+
+main h2 {
+  color: #005b7f;
 }
 
 .card {
   display: flex;
-  margin: 4em 20em;
-  padding: ;
+  margin: 4em 25%;
   box-shadow: 0 1px 10px;
 }
 
 .card hgroup {
-  margin: em;
-  padding: 4em;
+  padding: 4em 2em 0em 2em;
+  word-wrap:
 }
 
 .article-title {
   background-color: #005b7f;
-  width: 300px;
   color: #ffffff;
+  flex-basis: 25%
 }
 
 .main-content {
   margin: 4em;
+  line-height: 1.5em;
+  flex-basis: 75%;
 }
 
 /* home-contact */
 #home-contact {
   background-color: #7accc8;
+  color: #005b7f;
   display: flex;
+  border-top: 15px;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-style: dashed;
+}
+
+#home-contact h2 {
+  font-size: 4em;
+  padding-top: .5em;
+}
+
+#home-contact li {
+  list-style-type: none;
+  padding: 2em;
+  font-size: 1.25em;
+}
+
+.iPhone-icon {
+  margin-left: 15px;
+}
+
+.location-icon {
+  margin-left: 10px;
 }
 
 #left-side {
   flex-basis: 30%;
-  margin: 50px;
-}
-
-#left-side h2 {
-  padding: 2em 0;
 }
 
 #right-side {
   flex-basis: 70%;
   padding: 50px;
-  background-color: ;
 }
 
-#right-side h4 {
-  padding: 4em 0;
-}
-
-#home-contact li {
-  list-style-type: none;
-  margin: 2em;
+#right-side h3 {
+  padding: 2em 0;
 }
 
 form {
