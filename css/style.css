@@ -65,7 +65,7 @@ h4 {
   background-image: url(../img/resume-home-hero-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 20em 0;
+  padding: 20% 0;
   background-position: center;
 }
 
@@ -73,9 +73,9 @@ h4 {
   color: #fff;
   border-style: solid;
   text-align: center;
-  width: 16em;
+  width:px;
   padding: 2em;
-  margin: 0 20em;
+  margin: 0 350px;
 }
 
 /* navbar */
@@ -86,7 +86,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  box-shadow: 0 5px 50px;
+  box-shadow: 0 1px 10px;
 }
 
 nav li {
