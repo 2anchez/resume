@@ -41,3 +41,7 @@ Your evaluation session will proceed as follows:
 6. Track a code project with version control on GitHub
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/2anchez/resume?logo=github&style=plastic)
+
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/2anchez/resume?style=plastic)
+
+![GitHub issues](https://img.shields.io/github/issues/2anchez/resume)
