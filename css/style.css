@@ -105,7 +105,11 @@ nav a {
 nav a:hover {
   background-color: #333333;
   padding: 1.25em 4em;
+}
 
+nav a:focus {
+  background-color: black;
+  padding: 1.25em 4em;
 }
 
 label {
@@ -142,6 +146,7 @@ label {
 
 .white-button a:hover {
   box-shadow: 0 1px 10px;
+  transition: 0.5s ease;
 }
 
 /* skills-portfolio */
@@ -183,16 +188,6 @@ label {
 
 .skills-container ul {
   list-style: none;
-
-}
-
-}
-
-.skills-icons {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  width: 30%;
-  height: auto;
 }
 
 /* portfolio */
@@ -382,6 +377,7 @@ textarea {
   margin: ;
   width: 25%;
   padding: 1.5em;
+  transition: 0.5s ease;
 }
 
 .form-button:hover {
