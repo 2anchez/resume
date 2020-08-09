@@ -5,25 +5,25 @@
     <meta charset="utf-8">
     <meta name="description" content="A resume created by Christian Sanchez using html and css.">
     <meta name="keywords" content="html5, css3, html, css, responsive, resume">
-    <title>Christian Sanchez Resume</title>
+    <title>Christian Sanchez's Resume</title>
 <!-- mobile meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <!-- css style -->
     <link rel="stylesheet" media="screen and (min-width: 1424px)" href="css/style.css">
     <link rel="stylesheet" media="screen and (min-width: 1024px) and (max-width: 1424px)" href="css/medium-resolution.css">
     <link rel="stylesheet" media="screen and (max-width: 1024px)" href="css/small-resolution.css">
+<!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap" rel="stylesheet">
   </head>
 <!-- end page needs -->
 <!-- body start-->
   <body>
 <!-- home-hero -->
-    <header class="home-hero">
-      <h1 id="home">Christian Sanchez<br> <span>Web Developer & Graphic Artist</span></h1>
-    </header>
 <!-- nav-bar -->
     <nav>
-      <label for="toggle">&#9776;<label>
-      <input type="checkbox" id="toggle">
+      <!-- <label for="toggle">&#9776;<label>
+      <input type="checkbox" id="toggle"> -->
+      <a href="#" class="logo">Christian Sanchez</a>
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -33,21 +33,91 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+    <section id="home" class="banner">
+      <h1 class="banner__header">Christian Sanchez</h1>
+      <p class="banner__header--sub">Graphic Artist | Web Developer</p>
+       <ul class="banner__icons">
+        <li><a href="http://www.linkedin.com/in/crsanchez10" target="_blank"><img class="small-icon" src="img/icons/linkedin-white.png" alt="Linkedin icon"></a></li>
+        <li><a href="https://github.com/2anchez" target="_blank"><img class="small-icon" src="img/icons/github-white.png" alt="Github icon"></a></li>
+        <li><a href="https://www.behance.net/christisanchez22" target="_blank"><img class="small-icon" src="img/icons/behance-white.png" alt="Behance icon"></a></li>
+        <li><a href="#"><img class="small-icon" src="img/icons/pinterest-white.png" alt="Pinterest icon"></a></li>
+      </ul>
+    </section>
 <!-- home-about -->
-    <section id="home-about">
-      <h2 id="about">About Me<br> <span>A short intro about myself</span></h2>
+    <section id="about">
+      <h2>About Me</h2>
       <p>
         I am a graphic artist skilled in a variety of design, logo and marketing packages geared to strengthen
-        business competence. Also, conceptualize in innovative design solutions for print, web and broadcast
+        business competence. I also, conceptualize in innovative design solutions for print, web and broadcast
         applications. I have had the great fortune of working on some truly inspiring projects while networking
         with many influential and creative individuals along the way. My purpose is to gain as much knowledge
         and experience while working with others to enhance my skills and become a master designer.
       </p>
-      <div class="white-button">
-        <a href="christian-sanchez-resume.pdf" target="_blank">Download Printable Resume</a>
-      </div>
     </section>
-<!-- home-skills -->
+    <section class="cv">
+        <section class="cv--leftside">
+          <img class="avatar" src="img/icons/avatar.png" alt="Avatar icon">
+          <h6 class="cvheader">Contact</h6>
+          <ul>
+            <li>crsanchez10@gmail.com</li>
+            <li>(609)439-5001</li>
+            <li>Trenton, NJ</li>
+          </ul>
+          <h6 class="cvheader">About Me</h6>
+          <p>
+            I am a graphic artist skilled in a variety of design, logo and marketing packages geared to strengthen
+            business competence. My purpose is to gain as much knowledge and experience while working with others
+            to enhance my skills and become a master designer.
+          </p>
+          <h6 class="cvheader">Hobbies</h6>
+          <ul class="hobbies-icons">
+            <li><img class="hobbies-icon" src="img/icons/gameboy-icon.png" alt="Gameboy icon"></li>
+            <li><img class="hobbies-icon" src="img/icons/dumbell-icon.png" alt="Github icon"></li>
+            <li><img class="hobbies-icon" src="img/icons/camera-icon.png" alt="Behance icon"></li>
+            <li><img class="hobbies-icon" src="img/icons/pencil-icon.png" alt="Pinterest icon"></li>
+          </ul>
+        </section>
+        <section class="cv--rightside">
+          <h4><span>Christian</span> Sanchez</h4>
+          <p>Graphic Artist | Web Developer</p>
+          <h6 class="cvheader-edu">Education</h6>
+          <hr>
+          <div class="cv--contentcontainer">
+            <p>2020-Pres</p>
+            <p><strong>OpenClassrooms</strong><br><em>Web Developer</em><br><span>Current student of OpenClassrooms, translating graphic recommendations
+            into web languages by writing HTML, CSS, and JavaScript code.</span></p>
+          </div>
+          <div class="cv--contentcontainer">
+            <p>2012-2016</p>
+            <p><strong>Cheyney University</strong><br><em>Graphic Design</em><br><span>Graduate of Cheyney University specializing in Graphic Design, as well as,
+            fine art coursework, computer and art design courses, and studio art course.</span></p>
+          </div>
+          <h6 class="cvheader-edu">Experience</h6>
+          <hr>
+          <div class="cv--contentcontainer">
+            <p>2019-Pres</p>
+            <p><strong>Amazon</strong><br><em>Transportaion Specialist</em><br><span>Organzing daily data using excel, supporting Amazon operations and logistics;
+            ensuring warehouse packages and custumer orders are fulfilled.</span></p>
+          </div>
+          <div class="cv--contentcontainer">
+            <p>2016-Pres</p>
+            <p><strong>Freelance</strong><br><em>Graphic Artist</em><br><span>Creating designs by hand, drawing or painting, or using computer software;
+            Designing advertisements, annual reports, artwork, books and their covers,
+            brochures, logos, magazine covers, signs, stickers, tee shirts, web pages
+            and other branding and communication materials.</span></p>
+          </div>
+
+        </section>
+
+    </section>
+
+
+
+    <div class="button">
+      <a href="christian-sanchez-resume.pdf" target="_blank">Download Printable Resume</a>
+    </div>
+
+<!-- home-skills
   <section id="skills-portfolio">
     <section id="home-skills">
       <header id="section-header">
@@ -84,7 +154,7 @@
       </section>
     </section>
     <hr>
-  <!-- portfolio -->
+  portfolio
     <section id="portfolio">
       <img class="bar" src="img/bar-misfit-logo.png" alt="Bar Misfit Logo">
       <img class="ice" src="img/ice-cream.png" alt="Ice Cream Logo">
@@ -97,8 +167,8 @@
       <a href="#">View Portfolio</a>
     </div>
 </section>
-<!-- main -->
-<!-- home-experience -->
+<!-- main
+<!-- home-experience
     <main class="container">
       <header id="section-header home-exp">
         <h2 id="experience" class="section-title"><img class="icon" src="img/icons/brief-case-icon-dark-blue.png" alt="brief case icon" align="">Experience</h2>
@@ -158,7 +228,7 @@
         </p>
       </article>
     </section>
-<!-- home-education -->
+<!-- home-education
       <header id="section-header home-edu">
         <h2 id="education" class="section-title"><img class="icon "src="img/icons/graduation-cap-dark-blue.png" alt="graduation gap icon" align="middle">Education</h2>
       </header>
@@ -193,7 +263,7 @@
       </article>
     </section>
     </main>
-<!-- home-contact -->
+<!-- home-contact
     <section id="home-contact">
       <section id="left-side">
         <h2 id="contact" class="section-title">Contact</h2>
@@ -214,7 +284,7 @@
         </form>
       </section>
     </section>
-<!-- footer -->
+<!-- footer
     <footer>
       <ul>
         <li><a href="http://www.linkedin.com/in/crsanchez10" target="_blank"><img class="small-icon" src="img/icons/linkedin-white.png" alt="Linkedin icon"></a></li>
@@ -223,5 +293,6 @@
         <li><a href="#"><img class="small-icon" src="img/icons/pinterest-white.png" alt="Pinterest icon"></a></li>
       </ul>
     </footer>
+  -->
   </body>
 </html>

@@ -1,0 +1,94 @@
+@import "./utils/variables";
+@import "./base/base";
+@import "./base/typography";
+@import "./components/navbar";
+@import "./components/homehero";
+@import "./components/icons";
+
+// about-section
+#about {
+  padding: 50px;
+  p {
+    margin: 50px 300px;
+    line-height: 2em;
+    color: white;
+  }
+}
+
+.cv {
+  background-color: $color-white;
+  height: 575px;
+  width: 30%;
+  margin: 0 575px;
+  box-shadow: 15px 5px 10px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  cursor: pointer;
+  &:hover {
+    transform: scale(2);
+    transition: 1.25s;
+    box-shadow: 100px 250px 100px;
+  }
+  &--leftside {
+    background-color: $color-secondary;
+    ul {
+      list-style-type: none;
+      margin: 10px;
+      font-size: .5rem;
+      line-height: 1.15rem;
+      color: $color-white;
+    }
+    p {
+      font-size: .25rem;
+      margin: 10px;
+      line-height: 1.15rem;
+      color: $color-white;
+    }
+  }
+  .avatar {
+    margin: 10px 0 10px 35px;
+    height: 75px;
+    width: 75px;
+    border: solid 2px;
+    border-radius: 100%;
+    background-color: $color-white;
+  }
+  .cvheader {
+    @include cvHeader;
+  }
+  .hobbies-icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hobbies-icon {
+    height: 20px;
+    width: 20px;
+  }
+  &--rightside {
+    h4 {
+      margin: 10px 10px 0px 10px;
+      font-size: 1.5rem;
+      font-weight: 100;
+      span {
+        font-weight: 700;
+        color: $color-secondary;
+      }
+    }
+    p {
+      font-size: .5rem;
+      margin: 0 10px;
+    }
+    .cvheader-edu {
+      margin: 20px 20px 0 20px;
+    }
+    hr {
+      margin: 0 10px;
+    }
+  }
+  &--contentcontainer {
+    display: flex;
+    margin: 10px;
+    line-height: 1.05rem;
+    font-size: .75rem;
+  }
+}

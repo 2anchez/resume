@@ -1,0 +1,44 @@
+//navbar
+.logo {
+  font-family: Calligraffitti;
+  text-decoration: none;
+  color: $color-white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: $color-primary;
+  padding: 2em;
+  z-index: 1;
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  li {
+    font-size: .75em;
+    line-height: 2em;
+    text-transform: uppercase;
+    color: $color-white;
+    text-decoration: none;
+    :hover {
+      @include hover;
+      }
+    a {
+      text-decoration: none;
+      color: $color-white;
+      padding: 1.5em;
+      }
+    }
+  }
+}
