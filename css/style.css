@@ -23,13 +23,13 @@ h2 {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: raleway, arial, helvetica, sans-serif;
   background-color: #949494;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .logo {
@@ -39,23 +39,20 @@ html {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   float: left;
 }
 
 nav {
   position: fixed;
   width: 100%;
+  box-shadow: 0 1px 10px;
   box-sizing: border-box;
   background-color: #949494;
-  padding: 2em;
+  padding: 1.5em;
   z-index: 1;
 }
 nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -70,8 +67,13 @@ nav ul li {
 }
 nav ul li :hover {
   background-color: #7b7b7b;
-  padding: 1.5em;
   border-radius: 50px;
+  padding: 1.5em;
+}
+nav ul li :active {
+  background-color: #545454;
+  border-radius: 50px;
+  padding: 1.5em;
 }
 nav ul li a {
   text-decoration: none;
@@ -85,35 +87,34 @@ nav ul li a {
   background-repeat: no-repeat;
   background-blend-mode: multiply;
   background-position: center center;
+  position: relative;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .banner__header {
   font-family: raleway;
   font-size: 4rem;
   color: #ffffff;
   border: solid 5px;
-  padding: 20px;
+  padding: 1.15em;
   animation: fadeAndFloat 5s;
+  text-align: center;
   position: absolute;
-  top: 25%;
-  left: 33%;
 }
-.banner__header--sub {
-  font-family: raleway;
-  color: #ffffff;
-  animation: fadeAndFloat 5s;
-  position: absolute;
-  top: 35%;
-  left: 43%;
+.banner__header span {
+  font-size: 0.5em;
+  font-weight: 100;
 }
 .banner__icons {
   list-style-type: none;
   display: flex;
-  position: absolute;
-  top: 80%;
-  left: 39%;
+  position: relative;
+  top: 40%;
 }
 .banner__icons li {
   margin: 40px;
@@ -123,43 +124,31 @@ nav ul li a {
   transform: scale(2.5);
   transition: 1.15s;
 }
-.banner .home-header {
-  font-family: raleway;
-  font-size: 50px;
-  color: #ffffff;
-  position: absolute;
-  top: 50%;
-  left: 38%;
-}
-
-.small-icon {
-  height: 25px;
-  width: 25px;
-}
-
-#about {
-  padding: 50px;
-}
-#about p {
-  margin: 50px 300px;
-  line-height: 2em;
-  color: white;
-}
 
 .cv {
   background-color: #ffffff;
-  height: 575px;
-  width: 30%;
-  margin: 0 575px;
-  box-shadow: 15px 5px 10px;
+  height: 600px;
+  width: 500px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  cursor: pointer;
+  cursor: wait;
+}
+.cv--contacticon {
+  height: 15px;
+  width: 15px;
+  margin-right: 10px;
+}
+.cv--headericon {
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
 }
 .cv:hover {
-  transform: scale(2);
-  transition: 1.25s;
-  box-shadow: 100px 250px 100px;
+  transform: scale(1.45);
+  transition: 3s;
+  box-shadow: 50px 50px 25px;
 }
 .cv--leftside {
   background-color: #005b7f;
@@ -168,7 +157,7 @@ nav ul li a {
   list-style-type: none;
   margin: 10px;
   font-size: 0.5rem;
-  line-height: 1.15rem;
+  line-height: 2rem;
   color: #ffffff;
 }
 .cv--leftside p {
@@ -178,7 +167,7 @@ nav ul li a {
   color: #ffffff;
 }
 .cv .avatar {
-  margin: 10px 0 10px 35px;
+  margin: 15px 0 15px 45px;
   height: 75px;
   width: 75px;
   border: solid 2px;
@@ -191,28 +180,27 @@ nav ul li a {
   color: #ffffff;
   padding: 5px;
 }
-.cv .hobbies-icons {
+.cv .cv-icons {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
-.cv .hobbies-icon {
+.cv .cv-icon {
   height: 20px;
   width: 20px;
 }
 .cv--rightside h4 {
-  margin: 10px 10px 0px 10px;
+  margin: 10px;
   font-size: 1.5rem;
   font-weight: 100;
 }
-.cv--rightside h4 span {
-  font-weight: 700;
+.cv--rightside h4 strong {
   color: #005b7f;
 }
-.cv--rightside p {
+.cv--rightside h4 span {
   font-size: 0.5rem;
-  margin: 0 10px;
 }
-.cv--rightside .cvheader-edu {
+.cv--rightside .cvheader-edu-exp {
   margin: 20px 20px 0 20px;
 }
 .cv--rightside hr {
@@ -223,6 +211,129 @@ nav ul li a {
   margin: 10px;
   line-height: 1.05rem;
   font-size: 0.75rem;
+}
+.cv--contentcontainer p {
+  font-size: 0.5rem;
+  margin: 0 10px;
+}
+
+.cv__button {
+  text-align: center;
+}
+.cv__button .button {
+  margin: 100px;
+}
+.cv__button .button:hover {
+  transform: scale(1.15);
+  transition: 1.25s;
+}
+.cv__button .button a {
+  text-decoration: none;
+  color: #005b7f;
+  border: 2px solid;
+  padding: 2em 4em;
+  border-radius: 50px;
+}
+
+.small-icon {
+  height: 25px;
+  width: 25px;
+}
+
+#about {
+  background: linear-gradient(#005b7f, #949494);
+  padding: 50px;
+}
+#about p {
+  margin: 50px 300px;
+  line-height: 2em;
+  color: white;
+}
+
+#skills {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skills .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px;
+}
+#skills .card--header {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #949494;
+  z-index: 1;
+}
+#skills .card--header:hover {
+  background-color: #005b7f;
+}
+#skills .card--header h3 {
+  color: #ffffff;
+  margin: 10px;
+}
+#skills .card--content {
+  position: relative;
+  background-color: #ffffff;
+  height: 200px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 1px 1px 20px;
+}
+
+.card .card--header .card--icon {
+  opacity: 0.2;
+  transition: 0.75s;
+}
+
+.card .card--header:hover .card--icon {
+  opacity: 1;
+  transition: 0.75s;
+}
+
+.card .card--header h3 {
+  opacity: 0.2;
+  transition: 0.75s;
+}
+
+.card .card--header:hover h3 {
+  opacity: 1;
+  transition: 0.75s;
+}
+
+.card .card--header {
+  transition: 0.75s;
+  transform: translateY(100px);
+}
+
+.card .card--header:hover {
+  transition: 0.75s;
+  transform: translateY(0);
+}
+
+.card .card--content {
+  transition: 0.75s;
+  transform: translateY(-100px);
+}
+
+.card .card--header:hover .card--content {
+  transition: 0.75s;
+  transform: translateY(0);
+}
+
+.card--icon {
+  height: 100px;
+  width: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */

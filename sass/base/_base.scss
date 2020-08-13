@@ -4,11 +4,11 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: raleway, arial, helvetica, sans-serif;
   background-color: $color-primary;
-}
-
-html {
-  scroll-behavior: smooth;
 }
