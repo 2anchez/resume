@@ -1,0 +1,10 @@
+// about-section
+#about {
+  background: linear-gradient($color-secondary, $color-primary);
+  padding: 50px;
+  p {
+    margin: 50px 150px;
+    line-height: 2em;
+    color: white;
+  }
+}

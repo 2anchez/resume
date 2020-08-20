@@ -95,7 +95,9 @@
   .button {
     margin: 100px;
     &:hover {
-      @include buttonHover;
+      a {
+        @include buttonHover;
+      }
     }
     a {
       @include button;

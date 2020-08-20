@@ -3,17 +3,105 @@
 @import "./base/typography";
 @import "./components/navbar";
 @import "./components/homehero";
+@import "./components/about";
 @import "./components/skills";
+@import "./components/main";
 @import "./components/cv";
 @import "./components/icons";
 
-// about-section
-#about {
-  background: linear-gradient($color-secondary, $color-primary);
-  padding: 50px;
-  p {
-    margin: 50px 300px;
-    line-height: 2em;
-    color: white;
+.contact {
+  position: relative;
+  background-color: $color-secondary;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  &::before {
+    content: '';
+    background-color: $color-accent;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: 0;
   }
+  &__info {
+    background-color: $color-secondary;
+    color: $color-white;
+    position: absolute;
+    left: 15%;
+    height: 400px;
+    width: 350px;
+    z-index: 2;
+    box-shadow: 3px 3px 10px black;
+    h3 {
+      text-align: center;
+      margin-top: 25px;
+    }
+    ul {
+      list-style: none;
+      margin: 50px;
+      li {
+        line-height: 4em;
+        cursor: pointer;
+        opacity: 0.5;
+        transition: .75s;
+        &:hover {
+          opacity: 1;
+          transition: .5s;
+        }
+        img {
+          height: 40px;
+          width: 40px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  &__form {
+    background-color: $color-white;
+    height: 600px;
+    width: 950px;
+    padding: 25px 150px;
+    position: absolute;
+    left: 25%;
+    box-shadow: 3px 3px 10px;
+    z-index: 1;
+    h3 {
+      text-align: center;
+      color: $color-secondary;
+      margin-bottom: 50px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 100px;
+      input {
+          margin-bottom: 35px;
+          border: none;
+          border-bottom: 1px solid $color-secondary;
+          padding: 1.5em;
+        }
+      textarea {
+        border: none;
+        border-bottom: 1px solid $color-secondary;
+        margin-bottom: 35px;
+        height: 100px;
+      }
+      button {
+        background: none;
+        color: $color-secondary;
+        border: 2px solid $color-secondary;
+        cursor: pointer;
+        width: 200px;
+        padding: 1.5em;
+      }
+    }
+  }
+}
+
+.contacticons {
+  display: flex;
+  justify-content: space-between;
 }

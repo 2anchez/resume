@@ -1,0 +1,35 @@
+main {
+  background-color: $color-white;
+  padding: 100px;
+}
+
+.main__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h2 {
+    color: $color-secondary;
+    padding-left: 25px;
+  }
+}
+
+.main__card {
+  display: flex;
+  margin: 100px;
+  box-shadow: 3px 3px 15px;
+  height: 175px;
+  min-width: 775px;
+  h3 {
+    background-color: $color-secondary;
+    color: $color-white;
+    text-align: center;
+    padding: 2em;
+    min-width: 275px;
+    span {
+      font-weight: 100;
+    }
+  }
+  p {
+    margin: 2em;
+  }
+}

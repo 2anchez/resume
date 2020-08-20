@@ -9,7 +9,6 @@
   position: relative;
   height: 100vh;
   width: 100vw;
-  z-index: -1;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,7 +19,7 @@
     color: $color-white;
     border: solid 5px;
     padding: 1.15em;
-    animation: fadeAndFloat 5s;
+    animation: fadeAndFloat 2s;
     text-align: center;
     position: absolute;
     span {
@@ -35,7 +34,7 @@
     top: 40%;
     li {
       margin: 40px;
-      animation: fadeAndFloat 5s;
+      animation: fadeAndFloat 2s;
       &:hover {
         transform: scale(2.5);
         transition: 1.15s;
