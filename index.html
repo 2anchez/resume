@@ -19,10 +19,10 @@
 <!-- home-hero -->
 <!-- nav-bar -->
     <nav>
-      <!-- <label for="toggle">&#9776;<label>
-      <input type="checkbox" id="toggle"> -->
       <a href="#home" class="logo">Christian Sanchez</a>
-      <ul>
+      <label for="toggle">&#9776;</label>
+      <input type="checkbox" id="toggle">
+      <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -33,7 +33,7 @@
     </nav>
     <section id="home" class="banner">
       <h1 class="banner__header">Christian Sanchez<br><span>Graphic Artist | Web Developer</span></h1>
-       <ul class="banner__icons">
+      <ul class="banner__icons">
         <li><a href="http://www.linkedin.com/in/crsanchez10" target="_blank"><img class="small-icon" src="img/icons/linkedin-white.png" alt="Linkedin icon"></a></li>
         <li><a href="https://github.com/2anchez" target="_blank"><img class="small-icon" src="img/icons/github-white.png" alt="Github icon"></a></li>
         <li><a href="https://www.behance.net/christisanchez22" target="_blank"><img class="small-icon" src="img/icons/behance-white.png" alt="Behance icon"></a></li>
@@ -63,9 +63,8 @@
           </ul>
           <h6 class="cvheader">About Me</h6>
           <p>
-            I am a graphic artist skilled in a variety of design, logo and marketing packages geared to strengthen
-            business competence. My purpose is to gain as much knowledge and experience while working with others
-            to enhance my skills and become a master designer.
+            Here is a quick look at my resume. If your interested in downloading a copy,
+            please feel free to click the button below!
           </p>
           <h6 class="cvheader">Skills</h6>
           <ul class="cv-icons">
@@ -118,70 +117,60 @@
     <div class="cv__button">
       <div class="button"><a href="christian-sanchez-resume.pdf" target="_blank">Download CV</a></div>
     </div>
-
 <!-- home-skills -->
   <section id="skills">
-    <div class="card">
-      <header class="card--header">
-        <img class="card--icon" src="img/icons/design-icon.png" alt="Design icon">
-        <h3>Design</h3>
-      </header>
-      <section class="card--content">
-        <ul class="card-icons">
-          <li><img class="card-icon" src="img/icons/photoshop-icon.png" alt="HTML icon"></li>
-          <li><img class="card-icon" src="img/icons/illustrator-icon.png" alt="CSS icon"></li>
-          <li><img class="card-icon" src="img/icons/incopy-icon.png" alt="Sass icon"></li>
-          <li><img class="card-icon" src="img/icons/indesign-icon.png" alt="Photoshop icon"></li>
-          <li><img class="card-icon" src="img/icons/aftereffects-icon.png" alt="Illustrator icon"></li>
-          <li><img class="card-icon" src="img/icons/premier-icon.png" alt="Terminal icon"></li>
-        </ul>
-      </section>
-    </div>
-    <div class="card">
-      <header class="card--header">
-        <img class="card--icon" src="img/icons/code-icon.png" alt="Coding icon">
-        <h3>Coding</h3>
-      </header>
-      <section class="card--content">
-        <ul class="card-icons">
-          <li><img class="card-icon" src="img/icons/html5-icon.png" alt="HTML icon"></li>
-          <li><img class="card-icon" src="img/icons/css3-icon.png" alt="CSS icon"></li>
-          <li><img class="card-icon" src="img/icons/sass-icon.png" alt="Sass icon"></li>
-          <li><img class="card-icon" src="img/icons/git-icon.png" alt="Photoshop icon"></li>
-          <li><img class="card-icon" src="img/icons/github.png" alt="Illustrator icon"></li>
-          <li><img class="card-icon" src="img/icons/terminal-icon.png" alt="Illustrator icon"></li>
-        </ul>
-      </section>
-    </div>
-    <div class="card">
-      <header class="card--header">
-        <img class="card--icon" src="img/icons/webdesign-icon.png" alt="Design icon">
-        <h3>Web Development</h3>
-      </header>
-      <section class="card--content">
-        <ul class="card-icons">
-          <li><img class="card-icon" src="img/icons/dreamweaver-icon.png" alt="HTML icon"></li>
-          <li><img class="card-icon" src="img/icons/xd-icon.png" alt="CSS icon"></li>
-          <li><img class="card-icon" src="img/icons/visualstudio-icon.png" alt="Sass icon"></li>
-          <li><img class="card-icon" src="img/icons/atom-icon.png" alt="Photoshop icon"></li>
-        </ul>
-      </section>
+    <section class="skills-section">
+      <div class="card">
+        <header class="card--header">
+          <img class="card--icon" src="img/icons/design-icon.png" alt="Design icon">
+          <h3>Design</h3>
+        </header>
+        <section class="card--content">
+          <ul class="card-icons">
+            <li><img class="card-icon" src="img/icons/photoshop-icon.png" alt="HTML icon"></li>
+            <li><img class="card-icon" src="img/icons/illustrator-icon.png" alt="CSS icon"></li>
+            <li><img class="card-icon" src="img/icons/incopy-icon.png" alt="Sass icon"></li>
+            <li><img class="card-icon" src="img/icons/indesign-icon.png" alt="Photoshop icon"></li>
+            <li><img class="card-icon" src="img/icons/aftereffects-icon.png" alt="Illustrator icon"></li>
+            <li><img class="card-icon" src="img/icons/premier-icon.png" alt="Terminal icon"></li>
+          </ul>
+        </section>
+      </div>
+      <div class="card">
+        <header class="card--header">
+          <img class="card--icon" src="img/icons/code-icon.png" alt="Coding icon">
+          <h3>Coding</h3>
+        </header>
+        <section class="card--content">
+          <ul class="card-icons">
+            <li><img class="card-icon" src="img/icons/html5-icon.png" alt="HTML icon"></li>
+            <li><img class="card-icon" src="img/icons/css3-icon.png" alt="CSS icon"></li>
+            <li><img class="card-icon" src="img/icons/sass-icon.png" alt="Sass icon"></li>
+            <li><img class="card-icon" src="img/icons/git-icon.png" alt="Photoshop icon"></li>
+            <li><img class="card-icon" src="img/icons/github.png" alt="Illustrator icon"></li>
+            <li><img class="card-icon" src="img/icons/terminal-icon.png" alt="Illustrator icon"></li>
+          </ul>
+        </section>
+      </div>
+      <div class="card">
+        <header class="card--header">
+          <img class="card--icon" src="img/icons/webdesign-icon.png" alt="Design icon">
+          <h3>Web Development</h3>
+        </header>
+        <section class="card--content">
+          <ul class="card-icons">
+            <li><img class="card-icon" src="img/icons/dreamweaver-icon.png" alt="HTML icon"></li>
+            <li><img class="card-icon" src="img/icons/xd-icon.png" alt="CSS icon"></li>
+            <li><img class="card-icon" src="img/icons/visualstudio-icon.png" alt="Sass icon"></li>
+            <li><img class="card-icon" src="img/icons/atom-icon.png" alt="Photoshop icon"></li>
+          </ul>
+        </section>
+      </div>
+    </section>
+    <div class="skills-button">
+      <div class="button"><a href="christian-sanchez-resume.pdf" target="_blank">View Portfolio</a></div>
     </div>
   </section>
-
-  <!-- portfolio
-    <section id="portfolio">
-      <img class="bar" src="img/bar-misfit-logo.png" alt="Bar Misfit Logo">
-      <img class="ice" src="img/ice-cream.png" alt="Ice Cream Logo">
-      <img class="nail" src="img/monumental-nails-logo.jpg" alt="Monumental Nails Logo">
-      <img class="sweet" src="img/sweet-giggles-logo.png" alt="Sweet Giggles Logo">
-      <img class="red" src="img/red-velvet-11.png" alt="Red Velvet Logo">
-      <img class="jam" src="img/space-jam-11.png" alt="Space Jam 11">
-    </section>
-    <div class="white-button portfolio-button">
-      <a href="#">View Portfolio</a>
-    </div>
-</section>
 <!-- home-education -->
     <main>
       <header class="main__header">
@@ -251,7 +240,7 @@
     <section class="contact">
         <section class="contact__info">
           <h3 id="contact">Contact</h3>
-          <ul>
+          <ul class="contactlist">
             <li><img src="img/icons/email-icon.png" alt="email icon" align="middle">crsanchez10@gmail.com</li>
             <li><img src="img/icons/phone-icon.png" alt="phone icon" align="middle">(609)439-5001</li>
             <li><img src="img/icons/location-icon.png" alt="location icon" align="middle">Trenton, NJ</li>
@@ -269,20 +258,16 @@
             <input type="text" name"name" placeholder="Your name">
             <input type="text" name"email" placeholder="Your email" required="Field Required">
             <input type="text" name"subject" placeholder="Subject">
-            <textarea class="form-message" row="" placeholder=""></textarea>
+            <textarea class="form-message" placeholder=""></textarea>
             <button class="form-button">Send Message</button>
           </form>
         </section>
     </section>
-<!-- footer
+<!-- footer -->
     <footer>
-      <ul>
-        <li><a href="http://www.linkedin.com/in/crsanchez10" target="_blank"><img class="small-icon" src="img/icons/linkedin-white.png" alt="Linkedin icon"></a></li>
-        <li><a href="https://github.com/2anchez" target="_blank"><img class="small-icon" src="img/icons/github-white.png" alt="Github icon"></a></li>
-        <li><a href="https://www.behance.net/christisanchez22" target="_blank"><img class="small-icon" src="img/icons/behance-white.png" alt="Behance icon"></a></li>
-        <li><a href="#"><img class="small-icon" src="img/icons/pinterest-white.png" alt="Pinterest icon"></a></li>
-      </ul>
+      <p>
+        Created by Christian Sanchez - 2020
+      </p>
     </footer>
-  -->
   </body>
 </html>

@@ -1,35 +1,81 @@
-main {
-  background-color: $color-white;
-  padding: 100px;
-}
-
-.main__header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h2 {
-    color: $color-secondary;
-    padding-left: 25px;
+@media only screen and (min-width: 1001px) {
+  main {
+    background-color: $color-white;
+    padding: 100px;
   }
-}
 
-.main__card {
-  display: flex;
-  margin: 100px;
-  box-shadow: 3px 3px 15px;
-  height: 175px;
-  min-width: 775px;
-  h3 {
-    background-color: $color-secondary;
-    color: $color-white;
-    text-align: center;
-    padding: 2em;
-    min-width: 275px;
-    span {
-      font-weight: 100;
+  .main__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: $color-secondary;
+      padding-left: 25px;
     }
   }
-  p {
-    margin: 2em;
+
+  .main__card {
+    display: flex;
+    margin: 50px;
+    box-shadow: 3px 3px 15px;
+    height: 185px;
+    max-width: 1200px;
+    min-width: 775px;
+    h3 {
+      background-color: $color-secondary;
+      color: $color-white;
+      text-align: center;
+      padding: 2em;
+      min-width: 275px;
+      span {
+        font-weight: 100;
+      }
+    }
+    p {
+      margin: 2em;
+    }
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .main__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: $color-secondary;
+      padding-left: 25px;
+    }
+  }
+
+  .main__card {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 250px;
+    box-shadow: 3px 3px 15px;
+    min-height: 300px;
+    width: 100%;
+    h3 {
+      background-color: $color-secondary;
+      color: $color-white;
+      text-align: center;
+      padding: 2em;
+      min-width: 275px;
+      span {
+        font-weight: 100;
+      }
+    }
+    p {
+      margin: 2em;
+    }
   }
 }

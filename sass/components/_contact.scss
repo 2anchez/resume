@@ -1,0 +1,396 @@
+@media only screen and (min-width: 1025px) {
+    .contact {
+      position: relative;
+      background-color: $color-secondary;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      &::before {
+        content: '';
+        background-color: $color-accent;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+      &__info {
+        background-color: $color-secondary;
+        color: $color-white;
+        position: absolute;
+        left: 10%;
+        height: 400px;
+        width: 350px;
+        z-index: 2;
+        box-shadow: 3px 3px 10px black;
+        h3 {
+          text-align: center;
+          margin-top: 25px;
+        }
+        .contactlist {
+          list-style: none;
+          margin: 50px;
+          li {
+            line-height: 4.15em;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 40px;
+              width: 40px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .contacticons {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          li {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 25px;
+              width: 25px;
+            }
+          }
+        }
+      }
+      &__form {
+        background-color: $color-white;
+        height: 600px;
+        width: 65%;
+        padding: 25px 150px;
+        position: absolute;
+        left: 25%;
+        box-shadow: 3px 3px 10px;
+        z-index: 1;
+        h3 {
+          text-align: center;
+          color: $color-secondary;
+          margin-bottom: 50px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-left: 10%;
+          input {
+              margin-bottom: 35px;
+              border: none;
+              border-bottom: 1px solid $color-secondary;
+              padding: 1.5em;
+            }
+        textarea {
+          border: none;
+          border-bottom: 1px solid $color-secondary;
+          margin-bottom: 35px;
+          height: 100px;
+        }
+        button {
+          background: none;
+          color: $color-secondary;
+          border: 2px solid $color-secondary;
+          cursor: pointer;
+          width: 200px;
+          padding: 1.5em;
+          transition: .5s;
+          &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .contact {
+      background-color: $color-secondary;
+      display: flex;
+      &__info {
+        background-color: $color-secondary;
+        color: $color-white;
+        width: 400px;
+        h3 {
+          text-align: center;
+          margin: 25px;
+        }
+        .contactlist {
+          list-style: none;
+          margin: 100px 10px;
+          li {
+            line-height: 4.15em;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 40px;
+              width: 40px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .contacticons {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          li {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 25px;
+              width: 25px;
+            }
+          }
+        }
+      }
+      &__form {
+        background-color: $color-white;
+        width: 100%;
+        h3 {
+          text-align: center;
+          color: $color-secondary;
+          margin: 25px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 50px;
+          input {
+              margin-bottom: 35px;
+              border: none;
+              border-bottom: 1px solid $color-secondary;
+              padding: 1.5em;
+            }
+        textarea {
+          border: none;
+          border-bottom: 1px solid $color-secondary;
+          margin-bottom: 35px;
+          height: 100px;
+        }
+        button {
+          background: none;
+          color: $color-secondary;
+          border: 2px solid $color-secondary;
+          cursor: pointer;
+          width: 200px;
+          padding: 1.5em;
+          transition: .5s;
+          &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+    .contact {
+      background-color: $color-secondary;
+      display: flex;
+      &__info {
+        background-color: $color-secondary;
+        color: $color-white;
+        width: 400px;
+        h3 {
+          text-align: center;
+          margin: 25px;
+        }
+        .contactlist {
+          list-style: none;
+          margin: 100px 10px;
+          li {
+            line-height: 4.15em;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 40px;
+              width: 40px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .contacticons {
+          list-style: none;
+          display: flex;
+          justify-content: space-around;
+          li {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 25px;
+              width: 25px;
+            }
+          }
+        }
+      }
+      &__form {
+        background-color: $color-white;
+        width: 100%;
+        h3 {
+          text-align: center;
+          color: $color-secondary;
+          margin: 25px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 50px;
+          input {
+              margin-bottom: 35px;
+              border: none;
+              border-bottom: 1px solid $color-secondary;
+              padding: 1.5em;
+            }
+        textarea {
+          border: none;
+          border-bottom: 1px solid $color-secondary;
+          margin-bottom: 35px;
+          height: 100px;
+        }
+        button {
+          background: none;
+          color: $color-secondary;
+          border: 2px solid $color-secondary;
+          cursor: pointer;
+          width: 200px;
+          padding: 1.5em;
+          transition: .5s;
+          &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 540px) {
+    .contact {
+      background-color: $color-secondary;
+      display: flex;
+      flex-direction: column;
+      &__info {
+        background-color: $color-secondary;
+        color: $color-white;
+        h3 {
+          text-align: center;
+        }
+        .contactlist {
+          list-style: none;
+          margin: 25px;
+          li {
+            line-height: 4.15em;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 40px;
+              width: 40px;
+              margin-right: 10px;
+            }
+          }
+        }
+        .contacticons {
+          list-style: none;
+          display: none;
+          justify-content: space-around;
+          li {
+            cursor: pointer;
+            opacity: 0.5;
+            transition: .75s;
+            &:hover {
+              opacity: 1;
+              transition: .5s;
+            }
+            img {
+              height: 25px;
+              width: 25px;
+            }
+          }
+        }
+      }
+      &__form {
+        background-color: $color-white;
+        width: 100%;
+        h3 {
+          text-align: center;
+          color: $color-secondary;
+          margin: 25px;
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin: 50px;
+          input {
+              margin-bottom: 35px;
+              border: none;
+              border-bottom: 1px solid $color-secondary;
+              padding: 1.5em;
+            }
+        textarea {
+          border: none;
+          border-bottom: 1px solid $color-secondary;
+          margin-bottom: 35px;
+          height: 100px;
+        }
+        button {
+          background: none;
+          color: $color-secondary;
+          border: 2px solid $color-secondary;
+          cursor: pointer;
+          width: 200px;
+          padding: 1.5em;
+          transition: .5s;
+          &:hover {
+            color: $color-white;
+            background-color: $color-secondary;
+            transition: .5s;
+          }
+        }
+      }
+    }
+  }
+}

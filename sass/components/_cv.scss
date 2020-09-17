@@ -7,7 +7,7 @@
   box-shadow: 10px 10px 5px;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  cursor: wait;
+  cursor: pointer;
   &--contacticon {
     height: 15px;
     width: 15px;
@@ -101,6 +101,27 @@
     }
     a {
       @include button;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .cv {
+    display: none;
+  }
+
+  .cv__button {
+    text-align: center;
+    .button {
+      margin: 50px;
+      &:hover {
+        a {
+          @include buttonHover;
+        }
+      }
+      a {
+        @include button;
+      }
     }
   }
 }

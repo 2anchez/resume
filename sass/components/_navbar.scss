@@ -3,42 +3,85 @@
   font-family: Calligraffitti;
   text-decoration: none;
   color: $color-white;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  float: left;
+  margin: 0 0 0 25px;
 }
+
+label {
+  color: $color-white;
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+  float: right;
+  margin: 0 25px 0 0;
+}
+
+#toggle {
+  display: none;
+}
+
 nav {
   position: fixed;
   width: 100%;
+  height: 50px;
+  line-height: 50px;
   box-shadow: 0 1px 10px;
-  box-sizing: border-box;
   background-color: $color-primary;
-  padding: 1.5em;
-  z-index: 1;
+  z-index: 4;
   ul {
     display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     float: right;
   li {
+    cursor: pointer;
     font-size: .75em;
-    line-height: 2em;
     text-transform: uppercase;
     color: $color-white;
     text-decoration: none;
-    :hover {
-      @include hover;
-      }
-    :active {
-      @include click;
+    &:hover {
+      background-color: darken($color-primary, 10%);
+      border-bottom: 3px solid $color-white;
+    }
+    &:active {
+      background-color: darken($color-primary, 25%);
+      border-bottom: 3px solid $color-white;
     }
     a {
       text-decoration: none;
       color: $color-white;
-      padding: 1.5em;
+      padding: 0 20px;
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .logo {
+    font-family: Calligraffitti;
+    text-decoration: none;
+    color: $color-white;
+    margin: 0 0 0 25px;
+  }
+
+  label {
+    display: block;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  .menu {
+    width: 100%;
+    text-align: center;
+    display: none;
+    li {
+      background-color: $color-primary;
+      opacity: 95%;
+    }
+    a {
+      display: block;
+      margin: 0;
+      border-bottom: 1px solid #000000;
     }
   }
 }
