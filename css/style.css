@@ -441,7 +441,7 @@ nav ul li a {
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1450px) {
   #skills {
     display: none;
   }
@@ -449,7 +449,7 @@ nav ul li a {
 @media only screen and (min-width: 1001px) {
   main {
     background-color: #ffffff;
-    padding: 100px;
+    padding: 50px;
   }
 
   .main__header {
@@ -467,7 +467,7 @@ nav ul li a {
     margin: 50px;
     box-shadow: 3px 3px 15px;
     height: 185px;
-    max-width: 1200px;
+    max-width: 1400px;
     min-width: 775px;
   }
   .main__card h3 {
@@ -491,7 +491,7 @@ nav ul li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 100;
   }
 
   .main__header {
@@ -829,7 +829,7 @@ nav ul li a {
     transition: 0.5s;
   }
 }
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 700px) {
   .contact {
     background-color: #005b7f;
     display: flex;

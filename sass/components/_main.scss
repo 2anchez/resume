@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1001px) {
   main {
     background-color: $color-white;
-    padding: 100px;
+    padding: 50px;
   }
 
   .main__header {
@@ -19,7 +19,7 @@
     margin: 50px;
     box-shadow: 3px 3px 15px;
     height: 185px;
-    max-width: 1200px;
+    max-width: 1400px;
     min-width: 775px;
     h3 {
       background-color: $color-secondary;
@@ -44,7 +44,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 25px;
+    padding: 100;
   }
 
   .main__header {
