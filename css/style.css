@@ -467,7 +467,7 @@ nav ul li a {
     margin: 50px;
     box-shadow: 3px 3px 15px;
     height: 185px;
-    max-width: 1400px;
+    max-width: 1600px;
     min-width: 775px;
   }
   .main__card h3 {
@@ -510,7 +510,7 @@ nav ul li a {
     margin: 25px 250px;
     box-shadow: 3px 3px 15px;
     min-height: 300px;
-    width: 100%;
+    min-width: 275px;
   }
   .main__card h3 {
     background-color: #005b7f;
